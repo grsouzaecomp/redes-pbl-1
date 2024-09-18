@@ -39,7 +39,7 @@ def handle_client(connection, address):
           
           id_route = connection.recv(4096).decode().strip()
           if id_route in routes:
-            connection.sendall(f"You Have Selected a Route {routes[id_route]["name"]}.".encode())
+            connection.sendall(f"\nYou Have Selected a Route {routes[id_route]["name"]}.".encode())
             seat = connection.recv(4096).decode().strip()
 
             with lock:
@@ -52,7 +52,7 @@ def handle_client(connection, address):
               else:
                 connection.sendall("\n** SEAT UNAVAILABLE **\n".encode())
           else:
-            connection.sendall("\nInvalide Route\n".encode())
+            connection.sendall("\n** INVALIDE ROUTE **\n".encode())
         
         # Confirmar Reserva:
         elif option == "2":
@@ -68,15 +68,15 @@ def handle_client(connection, address):
         # Visualizar Reservas:
         elif option == "3":
           if client_reserves[id_client]:
-              my_reserves = "\n".join([f"Route: {reserve['route']}, Seat: {reserve['seat']}" for reserve in client_reserves[id_client]])
+              my_reserves = "\n".join([f"- Route: {reserve['route']}, Seat: {reserve['seat']}" for reserve in client_reserves[id_client]])
               connection.sendall(f"\nYour Confirmed Reserves:\n{my_reserves}\n".encode())
           else:
-              connection.sendall("You don't Have a Confirmed Reserve.\n".encode())
+              connection.sendall("\nYou don't Have a Confirmed Reserve.\n".encode())
               print(f"({id_client}) Viewed Your Reserves.")
         
         # Sair:
         elif option == "4":
-          connection.sendall("Disconnecting...".encode())
+          connection.sendall("\nDisconnecting...".encode())
           print(f"({id_client}) Has Been Disconnected.")
           break
 

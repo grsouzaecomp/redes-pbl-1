@@ -9,6 +9,7 @@ def request_reserve(server_host, server_port):
 
     while True:
       menu = server.recv(4096).decode()
+      
       print(menu)
 
       option = input("\nSelect an Option: ")
