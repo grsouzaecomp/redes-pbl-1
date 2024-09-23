@@ -32,6 +32,7 @@
 <p style="text-align: justify;">
   O sistema é composto por duas partes principais: o cliente e o servidor. O cliente se conecta ao servidor via um socket TCP/IP, permitindo a comunicação bidirecional e a interação com o usuário para realizar reservas de assentos. A arquitetura suporta múltiplas conexões simultâneas, e cada cliente é gerenciado por uma thread dedicada no servidor, garantindo que as operações sejam executadas de forma independente e segura. Foi utilizado
 o padrão TCP/IP onde o TCP garante a entrega ordenada e confiável dos pacotes de dados, enquanto o IP define o endereço dos dispositivos na rede e roteia os pacotes para o destino correto. Juntos, eles formam a base da comunicação na internet. Seguindo a seguinte estrutura demonstrada na imagem abaixo:
+  ![Explicação do TCP/IP.](https://github.com/grsouzaecomp/redes-pbl-1/tree/main/images/tcp_ip_explicacao.png)
 </p>
 
 <p style="text-align: justify;">
@@ -51,6 +52,7 @@ o padrão TCP/IP onde o TCP garante a entrega ordenada e confiável dos pacotes 
 
 <p style="text-align: justify;">
   A estruturação do Código foi previamente discutida em sala, e baseando-se nas ideias iniciais e de outros colegas, foi feita uma representação visual do funcionamento do código:
+  ![Estruturação do Código.](https://github.com/grsouzaecomp/redes-pbl-1/tree/main/images/estrutura_codigo.png)
 </p>
 
 <p style="text-align: justify;">
