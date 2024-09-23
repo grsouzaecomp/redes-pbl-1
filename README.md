@@ -98,7 +98,7 @@ Confirmando sua reserva, o cliente terá suas reservas confirmadas na opção tr
 </p>
 
 <p style="text-align: justify;">
-  Futuras melhorias podem incluir a otimização da gestão de threads no servidor para melhorar o desempenho em ambientes com um número ainda maior de clientes, além de aprimorar a interface de usuário para tornar o sistema mais acessível e fácil de usar.
+  Futuras melhorias podem incluir a otimização da gestão de threads no servidor para melhorar o desempenho em ambientes com um número ainda maior de clientes e também uma opção para que o cliente cancele suas reservas já feitas, além da criação de uma interface gráfica de usuário para tornar o sistema mais acessível e fácil de usar.
 </p>
 
 # Referências
