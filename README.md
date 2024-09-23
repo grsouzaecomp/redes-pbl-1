@@ -64,8 +64,28 @@ o padrão TCP/IP onde o TCP garante a entrega ordenada e confiável dos pacotes 
 # 3. Resultados
 
 <p style="text-align: justify;">
-  Durante a execução dos testes, o sistema demonstrou ser capaz de gerenciar múltiplos clientes simultaneamente, mantendo a integridade das reservas. As funcionalidades de reserva temporária e confirmação de assentos funcionaram conforme o esperado, com o cancelamento automático de reservas temporárias após o tempo limite de 30 segundos. O uso de locks garantiu que as operações críticas fossem executadas corretamente, sem condições de corrida ou inconsistências nos dados.
+  Durante a execução dos testes, o sistema demonstrou ser capaz de gerenciar múltiplos clientes simultaneamente, mantendo a integridade das reservas. Também foram implementadas funcionalidades de reserva temporária e confirmação de assentos, com o cancelamento automático de reservas temporárias após o tempo limite de 30 segundos. O cliente interage com o sistema a partir de um menu, conforme a imagem abaixo:
 </p>
+
+![Menu do Cliente]()
+
+<p style="text-align: justify;">
+Caso o cliente não confirme sua reserva em um período de 30 segundos, é exibida para o servidor a mensagem de que a reserva foi expirada, conforme a imagem abaixo:
+</p>
+
+![Cancelamento de Reserva]()
+
+<p style="text-align: justify;">
+O uso de locks garantiu que operações críticas fossem executadas corretamente, sem que vários clientes pudessem selecionar o mesmo assento. Caso outro cliente com outro ID tente selecionar o mesmo assento, é apresentado para ele que o assento em questão está indisponível, conforme a imagem abaixo:
+</p>
+
+![Assento Indisponível]()
+
+<p style="text-align: justify;">
+Confirmando sua reserva, o cliente terá suas reservas confirmadas na opção três, onde o mesmo pode visualizar suas reservas confirmadas, conforme a imagem abaixo:
+</p>
+
+![Reservas Confirmadas]()
 
 <p style="text-align: justify;">
   O servidor gerencia de forma eficiente as conexões e reservas, proporcionando uma experiência de usuário intuitiva e segura. A arquitetura permite escalabilidade e pode ser adaptada para ambientes com maior volume de acessos.
