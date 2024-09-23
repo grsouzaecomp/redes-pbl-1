@@ -34,7 +34,7 @@
 o padrão TCP/IP onde o TCP garante a entrega ordenada e confiável dos pacotes de dados, enquanto o IP define o endereço dos dispositivos na rede e roteia os pacotes para o destino correto. Juntos, eles formam a base da comunicação na internet. Seguindo a seguinte estrutura demonstrada na imagem abaixo:
 </p>
 
-![Explicação do TCP/IP.]
+![Explicação do TCP/IP.](https://github.com/grsouzaecomp/redes-pbl-1/blob/main/images/explicacao_tcp_ip.png)
 
 <p style="text-align: justify;">
   <b>Implementação do TCP/IP:</b> O padrão TCP/IP desempenha um papel central na comunicação entre cliente e servidor. As funções principais utilizadas incluem:
