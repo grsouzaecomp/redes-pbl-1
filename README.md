@@ -116,7 +116,7 @@ Confirmando sua reserva, o cliente terá suas reservas confirmadas na opção tr
 </p>
 
 <p style="text-align: justify;">
-  ANDRADE, Thiago. Programação Concorrente Utilizando Múltiplas Threads em Python. Revelo Community. 2023. Disponível em: https://community.revelo.com.br/programacao-concorrente-utilizando-multiplas-threads-em-python/. Acesso em: 1 de setembro de 2023.
+  ANDRADE, Thiago. Programação Concorrente Utilizando Múltiplas Threads em Python. Revelo Community. 2023. Disponível em: https://community.revelo.com.br/programacao-concorrente-utilizando-multiplas-threads-em-python/. Acesso em: 1 de setembro de 2024.
 </p>
 
 <p style="text-align: justify;">
