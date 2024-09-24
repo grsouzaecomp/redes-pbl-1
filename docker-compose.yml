@@ -1,10 +1,11 @@
+
 version: '3.8'
 
 services:
   server:
     build:
       context: .
-      dockerfile: Dockerfile.servidor
+      dockerfile: Dockerfile.server  
     ports:
       - "12345:12345"
     networks:
