@@ -7,6 +7,8 @@ services:
       dockerfile: Dockerfile.server
     ports:
       - "12345:12345"
+    networks:
+      - reservas_net
 
   client:
     build:
@@ -14,3 +16,9 @@ services:
       dockerfile: Dockerfile.client
     depends_on:
       - server
+    networks:
+      - reservas_net
+
+networks:
+  reservas_net:
+    driver: bridge
