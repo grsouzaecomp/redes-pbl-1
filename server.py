@@ -136,8 +136,9 @@ def cancel_temporary_reserve(id_client, id_route, id_segment, seat):
 
 # Função que inicializa o servidor e aceita conexões de clientes:
 def start_server():
-  host = 'localhost'
+  host = '0.0.0.0'
   port = 12345
+
 
   # Configuração do socket do servidor:
   server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

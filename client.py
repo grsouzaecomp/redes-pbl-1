@@ -1,5 +1,6 @@
 import socket
 
+
 # Função para solicitar uma reserva ao servidor:
 def request_reserve(server_host, server_port):
   # Cria um socket TCP/IP e conecta ao servidor:
@@ -61,6 +62,6 @@ def request_reserve(server_host, server_port):
 
 # Configurações do servidor (host e porta):
 if __name__ == "__main__":
-  server_host = "localhost"
+  server_host = "172.16.103.8"
   server_port = 12345
   request_reserve(server_host, server_port)
