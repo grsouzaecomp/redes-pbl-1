@@ -20,7 +20,7 @@
 # 1. Introdução
 
 <p style="text-align: justify;">
-  A gestão eficiente de reservas é essencial para diversos serviços de transporte. A falta de um sistema automatizado dificulta a alocação de assentos em rotas segmentadas, gerando problemas de disponibilidade e controle de reservas. Este projeto apresenta um sistema de servidor para gerenciar reservas de assentos em rotas de transporte segmentadas, utilizando comunicação via TCP/IP e controle de concorrência com threads e locks, garantindo segurança e integridade dos dados.
+  A gestão eficiente de reservas é essencial para diversos serviços de transporte. A falta de um sistema automatizado dificulta a alocação de assentos em rotas segmentadas, gerando problemas de disponibilidade e controle de reservas. Este projeto apresenta um sistema de servidor para gerenciar reservas de assentos em rotas de transporte segmentadas, utilizando comunicação via TCP/IP, sendo o statefull como paradigma de comunicação, enquanto o controle de concorrência foi feito com threads e locks, garantindo segurança e integridade dos dados.
 </p>
 
 <p style="text-align: justify;">
@@ -64,7 +64,7 @@ o padrão TCP/IP onde o TCP garante a entrega ordenada e confiável dos pacotes 
 # 3. Resultados
 
 <p style="text-align: justify;">
-  Durante a execução dos testes, o sistema demonstrou ser capaz de gerenciar múltiplos clientes simultaneamente, mantendo a integridade das reservas. Também foram implementadas funcionalidades de reserva temporária e confirmação de assentos, com o cancelamento automático de reservas temporárias após o tempo limite de 30 segundos. O cliente interage com o sistema a partir de um menu, conforme a imagem abaixo:
+  Durante a execução dos testes,foram feitos testes utilizando um computador no LARSID rodando o server, enquanto outros dois rodaram clientes simultaneamente, para fazer uma simulação real de vários clientes utilizando o sistema em computadores diferentes. O sistema demonstrou ser capaz de gerenciar múltiplos clientes simultaneamente, mantendo a integridade das reservas. Também foram implementadas funcionalidades de reserva temporária e confirmação de assentos, com o cancelamento automático de reservas temporárias após o tempo limite de 30 segundos. O cliente interage com o sistema a partir de um menu, conforme a imagem abaixo:
 </p>
 
 ![Menu do Cliente](https://github.com/grsouzaecomp/redes-pbl-1/blob/main/images/menu_principal.png)
